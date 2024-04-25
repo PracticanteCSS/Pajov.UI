@@ -20,11 +20,20 @@
     "@angular/platform-browser-dynamic": "^17.0.0",
     "@angular/platform-server": "^17.0.0",
     "@angular/router": "^17.0.0",
+    "@auth0/angular-jwt": "^5.2.0",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "@angular/ssr": "^17.0.7",
     "express": "^4.18.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.2"
+    "zone.js": "~0.14.2",
+    "date-fns": "^3.6.0",
+    "jquery": "^3.7.1",
+    "ngx-permissions": "^17.1.0",
+    "primeicons": "^6.0.1",
+    "primeng": "^17.11.0",
+    "sweetalert2": "^11.10.6"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^17.0.7",
