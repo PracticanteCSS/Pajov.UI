@@ -1,1 +1,144 @@
 /* You can add global styles to this file, and also import other style files */
+//PrimeNG
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', 'sans-serif' !important;
+}
+
+p {
+    margin: 0 !important;
+}
+
+// Variables
+$mainColor: #EE2B7B;
+$hoverColor: #D0115F;
+$activeColor: #EE2B7B;
+$disabledColor: #F472A7;
+
+$secondaryColor: #242422;
+$ShoverColor: #424242;
+$SactiveColor: #242422;
+$SdisabledColor: #A8A8A8;
+
+.btn-cesde-primary {
+    background-color: $mainColor;
+    color: white;
+    border: none;
+
+    &:hover {
+        background-color: $hoverColor;
+    }
+
+    &:active {
+        background-color: $activeColor;
+    }
+}
+
+.btn-cesde-secondary {
+    background-color: $secondaryColor;
+    color: white;
+    border: none;
+
+    &:hover {
+        background-color: $ShoverColor;
+    }
+
+    &:active {
+        background-color: $SactiveColor;
+    }
+}
+
+p-table th,
+td {
+    position: relative;
+    z-index: 2;
+    text-align: center !important;
+    font-family: 'Montserrat', 'sans-serif' !important;
+}
+
+.image-container {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+
+    img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .bi-pencil-square,
+    .bi-trash,
+    .pi-trash,
+    .pi-check-circle,
+    .pi-info,
+    .bi-bank,
+    .bi-credit-card-fill,
+    .bi-file-earmark-pdf,
+    .pi-eye,
+    .i-calendar-x,
+    .bi-card-checklist,
+    .pi-list {
+        font-size: 1rem;
+        z-index: 0;
+    }
+}
+
+.icono-search {
+    color: $mainColor;
+}
+
+
+//Prime NG
+.p-dropdown .p-dropdown-trigger,
+.icono-buscar {
+    color: $mainColor !important;
+}
+
+.p-checkbox .p-checkbox-box {
+    background-color: rgba(249, 184, 211, 1) !important;
+    border-color: $mainColor !important;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+    background-color: rgba(249, 184, 211, 1) !important;
+    border-color: $mainColor !important;
+}
+
+.p-checkbox .p-checkbox-box .p-checkbox-icon {
+    color: rgba(238, 43, 123, 1) !important;
+}
+
+.p-dropdown-items {
+    padding: 0 !important;
+}
+
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+    background: #EE2B7B;
+}
+
+.p-button {
+    background-color: $mainColor;
+    color: white;
+    border-radius: 8px;
+    margin: 0 4px;
+
+    &:hover {
+        background-color: $hoverColor;
+    }
+
+    &:active {
+        background-color: $activeColor;
+    }
+}

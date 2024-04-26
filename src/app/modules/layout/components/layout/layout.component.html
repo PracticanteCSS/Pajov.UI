@@ -1,0 +1,10 @@
+<app-navbar />
+<section class="heightCustom d-flex flex-column" [class.content-shift]="sidebarVisible">
+  <app-sidebar />
+  <div class="d-flex justify-content-center rounded m-2 flex-grow-1">
+    <div class="mt-4 w-100 m-2">
+      <router-outlet />
+    </div>
+  </div>
+  <app-footer></app-footer>
+</section>

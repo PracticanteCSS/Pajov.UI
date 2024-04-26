@@ -1,0 +1,44 @@
+<aside [class.sidebar-hidden]="!sidebarVisible" class="sidebar">
+    <nav *ngIf="sidebarVisible" class="sidebar">
+
+        <div class="logo-container" routerLink="/">
+            <img src="assets/img/logo_cesde_sin_fondo.png" alt="Logo" class="logo-img" />
+        </div>
+        <ul class="ps-0 mt-4">
+
+            <li class="nav-item" >
+                <button class="btn btn-toggle align-items-center rounded collapsed button-tittle"
+                    data-bs-toggle="collapse" data-bs-target="#estudiantes-collapse" aria-expanded="false">
+                    <i class="bi bi-people-fill sidebar-icon"></i>
+                    Docente
+                </button>
+                <div class="collapse" id="estudiantes-collapse">
+                    <ul class="btn-toggle-nav fw-normal small">
+                        <li>
+                            <a class="sidebar-title" routerLink="/grupos">
+                                Grupos
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="mb-1 nav-item" >
+                <button class="btn btn-toggle align-items-center rounded collapsed button-tittle"
+                    data-bs-toggle="collapse" data-bs-target="#matriculas-collapse" aria-expanded="false">
+                    <i class="bi bi-gear sidebar-icon"></i>
+                    Configuraciones
+                </button>
+                <div class="collapse" id="matriculas-collapse">
+                    <ul class="btn-toggle-nav fw-normal small">
+                        <li>
+                            <a class="sidebar-title" routerLink="/configuracion-reporte-docente">
+                                Notas y Asistencia
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</aside>
