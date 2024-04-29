@@ -13,7 +13,8 @@ import { LayoutComponent } from './components/layout/layout.component';
     SidebarComponent,
     NavbarComponent,
     FooterComponent,
-    LayoutComponent
+    LayoutComponent,
+    
   ],
   imports: [
     CommonModule,
