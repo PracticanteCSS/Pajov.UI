@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './components/layout/layout.component';
+import { SharedModule } from 'primeng/api';
 
 const routes: Routes = [
 {
@@ -17,18 +18,20 @@ const routes: Routes = [
       loadChildren: () =>
         import('../home/home.module').then((m) => m.HomeModule),
     },
-    // {
-    //   path: 'arl',
-    //   loadChildren: () =>
-    //     import('../arl/').then((m) => m.HomeModule),
-    // },
+    {
+      path: 'arl',
+      loadChildren: () =>
+        import('../arl/arl/components/listar-arl/listar-arl.module').then((m) => m.ListarArlModule),
+    },
   ]
 
 }
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
+  imports: [RouterModule.forChild(routes),
+    SharedModule
+  ],
   exports: [RouterModule]
 })
 export class LayoutRoutingModule { }
