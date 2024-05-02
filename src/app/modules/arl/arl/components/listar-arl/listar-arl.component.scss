@@ -1,3 +1,20 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .container {
+        height: 25%;
+    }
+
+    .card {
+    }
+
+    .btn-asignar{
+       
+    }
+}
+
 section {
     .card {
         border-radius: 4px;
@@ -20,3 +37,4 @@ section {
     }
 
 }
+

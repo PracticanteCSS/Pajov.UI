@@ -21,7 +21,7 @@ export class CrearArlComponent {
   @Output() closeModal = new EventEmitter<void>();
   @Output() closeModalEditar = new EventEmitter<void>();
   @Input() arl: Arl | null = null
-  ModalAsignarValor: boolean = false;
+  ModalAsignarArl: boolean = false;
   arls: Arl[] = [];
   formulario: FormGroup;
 
@@ -35,6 +35,6 @@ export class CrearArlComponent {
 
     });
   }ngOnInit(): void{
-    this.ModalAsignarValor = true;
+    this.ModalAsignarArl = true;
   }
 }

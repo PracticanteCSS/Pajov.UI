@@ -13,13 +13,13 @@ import { Router } from '@angular/router';
 export class ListarArlComponent {
   @Output() closeModal = new EventEmitter<void>();
   abrirModal() {
-    this.ModalAsignarValor = true;
+    this.ModalAsignarArl = true;
   }
-  ModalAsignarValor: boolean = false;
-  ModalEditarValor: boolean = false;
+  ModalAsignarArl: boolean = false;
+  ModalEditarArl: boolean = false;
 
   clear() {
-    this.ModalAsignarValor = false;
+    this.ModalAsignarArl = false;
     this.ArlActual = null;
   }
 
@@ -27,17 +27,17 @@ export class ListarArlComponent {
   ArlCopia: Arl[] = [];
   ArlActual:Arl | null = null;
   titulo: string = 'ARL';
-  formulario!: FormGroup;
+
 
   constructor(
     private _ArlService: ArlService,
     private _menssageService: MessageService,
     private _confirmationService: ConfirmationService,
-    private _fB: FormGroup,
     private router: Router
     ){}
 
     ngOnInit(): void{
+      this.listarArl();
       
     }
 
