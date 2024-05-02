@@ -20,12 +20,15 @@ import { CheckboxModule } from 'primeng/checkbox';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { NgxPermissionsModule } from 'ngx-permissions';
 import { ConfirmationService, MessageService } from 'primeng/api';
+import { ButtonComponent } from './components/button/button/button.component';
 
 
 
 @NgModule({
   declarations: [
 
+  
+    ButtonComponent
   ],
   imports: [
     CommonModule,
