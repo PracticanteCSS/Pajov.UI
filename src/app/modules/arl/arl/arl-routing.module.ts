@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { ListarArlComponent } from './listar-arl.component';
+import { ListarArlComponent } from './components/listar-arl/listar-arl.component';
 
 const routes: Routes = [
   {
-    path: '',
-    component: ListarArlComponent
+    path:'',
+    component:ListarArlComponent
   }
 ];
 
@@ -13,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class ListarArlRoutingModule { }
+export class ArlRoutingModule { }

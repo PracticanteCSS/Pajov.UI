@@ -21,7 +21,7 @@ const routes: Routes = [
     {
       path: 'arl',
       loadChildren: () =>
-        import('../arl/arl/components/listar-arl/listar-arl.module').then((m) => m.ListarArlModule),
+        import('../arl/arl/arl.module').then((m) => m.ArlModule),
     },
   ]
 
